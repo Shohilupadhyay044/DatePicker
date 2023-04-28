@@ -5,13 +5,4 @@ The library has many different feature options to customize your widget.
 
 To Add the Following Library : 
 
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
-  
-  dependencies {
-	        implementation 'com.github.Shohilupadhyay044:DatePicker:1.0.0'
-	}
+https://jitpack.io/#Shohilupadhyay044/DatePicker/1.0.0
