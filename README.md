@@ -7,6 +7,21 @@ To Add the Following Library :
 
 https://jitpack.io/#Shohilupadhyay044/DatePicker/1.0.0
 
-       [image](https://user-images.githubusercontent.com/75352285/235239026-6d5968d5-aa52-4d6d-94fe-d3a81bb82f06.png)
+     
+             DatePicker datePicker = findViewById(R.id.datepicker);
+        datePicker.setOffset(3);
+        datePicker.setTextSize(19);
+        datePicker.setPickerMode(DatePicker.DAY_ON_FIRST);
+        datePicker.setMaxDate(/*long time*/);
+        datePicker.setDate(/*long time*/);
+        datePicker.setMinDate(/*long time*/);
+        
+        datePicker.setDataSelectListener(new DatePicker.DataSelectListener() {
+            @Override
+            public void onDateSelected(long date, int day, int month, int year) {
+               
+            }
+        });![image](https://user-images.githubusercontent.com/75352285/235239230-c20fb2cd-735e-42e1-91ad-d773b0345721.png)
+
 
 
