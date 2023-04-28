@@ -10,10 +10,11 @@ Also u can visit the link : https://jitpack.io/#Shohilupadhyay044/DatePicker/1.0
     repositories {
         maven { url 'https://jitpack.io' }
     }
-Add the dependency
-    dependencies {
-	    implementation 'implementation 'com.github.Shohilupadhyay044:DatePicker:1.0.0''
+    
+        dependencies {
+	   implementation 'com.github.Shohilupadhyay044:DatePicker:1.0.0'
 	}
+
 
      
         DatePicker datePicker = findViewById(R.id.datepicker);
