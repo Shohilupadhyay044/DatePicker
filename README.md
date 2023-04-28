@@ -5,10 +5,18 @@ The library has many different feature options to customize your widget.
 
 To Add the Following Library : 
 
-https://jitpack.io/#Shohilupadhyay044/DatePicker/1.0.0
+Also u can visit the link : https://jitpack.io/#Shohilupadhyay044/DatePicker/1.0.0
+
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+Add the dependency
+    dependencies {
+	    implementation 'implementation 'com.github.Shohilupadhyay044:DatePicker:1.0.0''
+	}
 
      
-         DatePicker datePicker = findViewById(R.id.datepicker);
+        DatePicker datePicker = findViewById(R.id.datepicker);
         datePicker.setOffset(3);
         datePicker.setTextSize(19);
         datePicker.setPickerMode(DatePicker.DAY_ON_FIRST);
@@ -30,6 +38,42 @@ https://jitpack.io/#Shohilupadhyay044/DatePicker/1.0.0
             app:offset="3"
             app:pickerMode="dayFirst"
             app:textSize="19" />
+            
+                 datePickerPopup = new DatePickerPopup.Builder()
+                .from(/*context*/)
+                .offset(3)
+                .pickerMode(DatePicker.MONTH_ON_FIRST)
+                .textSize(19)
+                .endDate(/*long time*/)
+                .currentDate(/*long time*/)
+                .startDate(/*long time*/)
+                .listener(new DatePickerPopup.OnDateSelectListener() {
+                    @Override
+                    public void onDateSelected(DatePicker dp, long date, int day, int month, int year) {
+                        
+                    }
+                })
+                .build();
+                
+                        datePickerPopup = new DatePickerPopup.Builder()
+                .from(/*context*/)
+                .offset(3)
+                .pickerMode(DatePicker.MONTH_ON_FIRST)
+                .textSize(19)
+                .endDate(/*long time*/)
+                .currentDate(/*long time*/)
+                .startDate(/*long time*/)
+                .listener(new DatePickerPopup.OnDateSelectListener() {
+                    @Override
+                    public void onDateSelected(DatePicker dp, long date, int day, int month, int year) {
+                        
+                    }
+                })
+                .build();
+                
+                
+
+
 
 
 
