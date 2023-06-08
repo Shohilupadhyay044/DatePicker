@@ -255,13 +255,16 @@ public class WheelView extends ScrollView {
             }
 
             if (position == i) {
-                item.setTextColor(context.getColor(R.color.color_text));
-                if (item.getTextSize() != textSize)
-                    item.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
+                if (isNightTheme) {
+                    item.setTextColor(context.getColor(R.color.black));
+                }else {
+                    item.setTextColor(context.getColor(R.color.color_text));
+                    if (item.getTextSize() != textSize)
+                        item.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
 
-                String text = item.getText().toString();
-                item.setText(text.trim());
-
+                    String text = item.getText().toString();
+                    item.setText(text.trim());
+                }
             } else if (i < position) {
                 if (i == position - 1) {
                     item.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize - 2);
